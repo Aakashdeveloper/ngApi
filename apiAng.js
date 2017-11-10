@@ -4,7 +4,7 @@ var mongodb = require('mongodb').MongoClient;
 
 var app = express();
 
-var port = process.env.PORT||3100; 
+var port = process.env.PORT||3000; 
 var commanRouter = express.Router();
 
 commanRouter.route('/getProducts')
