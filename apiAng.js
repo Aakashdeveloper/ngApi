@@ -30,6 +30,9 @@ commanRouter.route('/getProducts')
 
 app.use('/api', commanRouter);
 
+app.get('/',function(req,res){
+	res.send("Working")
+});
 app.use(express.static(__dirname + '/public'));
 
 app.listen(port, function(){
